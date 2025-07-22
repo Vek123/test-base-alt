@@ -8,7 +8,7 @@ import fire
 import alt_repos_stat as stat
 
 
-class BranchDiff:
+class RepoInfo:
     """
     A CLI tool for getting information about ALT Linux repository.
     """
@@ -39,5 +39,5 @@ class BranchDiff:
 
 
 if __name__ == '__main__':
-    obj = BranchDiff()
+    obj = RepoInfo()
     fire.Fire(obj)
