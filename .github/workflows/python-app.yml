@@ -1,4 +1,4 @@
-name: Flake Black
+name: Flake Black Pytest
 
 on: [push]
 
