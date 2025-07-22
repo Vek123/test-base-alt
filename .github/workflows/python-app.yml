@@ -6,7 +6,7 @@ jobs:
 
   flake8:
 
-    runs-on: alt-p10
+    runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
       matrix:
@@ -27,7 +27,7 @@ jobs:
 
   black:
 
-    runs-on: alt-p10
+    runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
       matrix:
