@@ -111,5 +111,5 @@ def compare_packages(packages1: list[dict], packages2: list[dict]) -> dict:
     return {
         'a_not_in_b': first_not_in_second,
         'b_not_in_a': second_not_in_first,
-        'first_newer': first_newer_than_in_second,
+        'a_newer_than_b': first_newer_than_in_second,
     }
