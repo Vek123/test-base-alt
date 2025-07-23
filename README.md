@@ -10,7 +10,7 @@ Test case from **Base ALT** company. This is application was created to get info
 
 ```bash
 sudo apt-get update
-sudo apt-get install python
+sudo apt-get install python3
 ```
 
 - `Git`
