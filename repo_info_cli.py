@@ -4,6 +4,7 @@ __all__ = ()
 import json
 
 import fire
+from tqdm import tqdm
 
 import alt_repos_stat as stat
 
@@ -22,7 +23,7 @@ class RepoInfo:
         )
         compare_data = {}
 
-        for arch in common_archs:
+        for arch in tqdm(common_archs, 'Comparing branches', unit='arch'):
             branch1_packages = await stat.get_branch_packages(branch1, arch)
             branch2_packages = await stat.get_branch_packages(branch2, arch)
             compared = stat.compare_packages(
